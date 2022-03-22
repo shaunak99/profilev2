@@ -74,7 +74,7 @@
         <div class="header-intro header-intro-resume theme-bg-primary text-white py-5">
 	        <div class="container position-relative">
 		        <h2 class="page-heading mb-3">Resume</h2>
-		        <a class="btn theme-btn-on-bg download-resume position-absolute font-weight-bold mx-auto" href="assets/Resume_Shaunak.pdf" 
+		        <a class="btn theme-btn-on-bg download-resume position-absolute font-weight-bold mx-auto" href="assets/shaunaks_resume.pdf" 
 				target="_blank"><i class="fas fa-download mr-2"></i>Download PDF Version</a>
 	        </div><!--//container-->
         </div><!--//header-intro-->
@@ -154,22 +154,23 @@
 											</div>
 											<!--//row-->
 											<div class="resume-position-time">Sept 2021 - Present</div>
+											<div class="resume-supervisor-name"><i>Supervisor: Dr. Fernando De La Torre</i></div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
-											<p>I am currently working as an undergraduate research intern at the Human Sensing Lab.
-												My work revolves around 3D vision using Generative Adversarial Networks (GANs)
-												 for 3D face model generation.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
-											Technical Responsibilities</h4>
 											<p>
 												<ul>
-													<li>Designing a novel GAN architecture, effective Latent-Space
-														Encoding and hyperparameter tuning of Loss Function & Optimizer.</li>
-													<li>Dataset/DataLoader preparation, preparation of training & testing
-													scripts along with Evaluation Metrics to measure performance.</li>
+													<li>Working in 3D vision using Generative Adversarial Networks (GANs) for realistic 3-D Face Synthesis.</li>
+													<li>Involves using 3D Morphable Models (3DMMs), facial meshes, point-clouds and albedo-texture maps, UV
+														position and texture mapping along with 3D rendering.</li>
+													<li>Explored Auto-encoders, Variational Autoencoders (VAEs), GANs for non-linear neural generative modelling. This
+														further explores effective Latent-space encoding, Feature Disentanglement and defining task specific Loss
+														Functions for Supervised and Adversarial Training (e.g. Cross Entropy, GAN loss, WGAN-GP).</li>
+													<li>Responsibilities also included preparation of Dataset/Data Loader, training & testing scripts along with
+														Evaluation Metrics to measure performance.</li>
+													<li>Also explored GPU Parallelism, optimizing runtime performance for our NVIDIA GPUs running CUDA with
+														PyTorch. GPUs hosted on remote servers accessed via SSH.</li>
 												</ul>
-												Primary operations are run on remote servers running NVIDIA GPUs with CUDA.
 											</p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
 												Technologies
@@ -188,6 +189,9 @@
 												</li>
 												<li class="list-inline-item"><span
 													class="badge badge-secondary badge-pill">PyTorch</span>
+												</li>
+												<li class="list-inline-item"><span
+													class="badge badge-secondary badge-pill">3D Rendering</span>
 												</li>
 											</ul>
 										</div>
@@ -212,12 +216,9 @@
 										<div class="resume-timeline-item-desc">
 											<p>
 												<ul>
-													<li>Conducted research in Statistical Process Control (SPC)
-														and its use in optimizing Six Sigma Processes.</li> 
-													<li>Performed data analysis from manufacturing processes to find erroneous variations 
-														using statistical tools.</li>
-													<li>Statistical studies such as Process Capability (Cp), Process Capability Index (Cpk) 
-														were carried out to obtain quantitative results.</li>
+													<li>Researched on Statistical Process Control and its use in optimizing Six Sigma Processes.</li> 
+													<li>Analyzed manufacturing process data to find erroneous variations using statistical tools.</li>
+													<li>Conducted statistical studies to find Process Capability (Cp), Process Capability Index (Cpk).</li>
 												</ul>
 											</p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
@@ -256,8 +257,8 @@
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Ant Exploration 
-													using RL - Reinforcement Learning</h3>
+												<h3 class="resume-position-title font-weight-bold mb-1">Path Planning and Collision Avoidance 
+													using Reinforcement Learning</h3>
 											</div>
 											<!--//row-->
 											<div class="resume-position-time">Nov 2020</div>
@@ -266,11 +267,15 @@
 										<div class="resume-timeline-item-desc">
 											<p>
 												<ul>
-													<li>Created an RL agent that learns to 
-														explore its environment, avoid collisions and reach its goal.</li>
-													<li>The agent is trained using NEAT-python, a light-weight Evolutionary Neural 
-														Network. The game environment was created using 'pygame'.</li>
-													<li>Tuned the Reward Function for optimal learning.</li>
+													<li>Created a Reinforcement Learning agent using NEAT (Neuro-Evolution of Augmenting Topologies) for
+														environment exploration and collision avoidance. NEAT-python implements an evolutionary neural network to
+														perform reinforcement learning.</li>
+													<li>NEAT attempts to build an Artificial Neural Network (ANN) by adding and deleting neurons and modifying
+														connections in a stochastic manner and evolving these networks/genomes as they reproduce through the
+														generations.</li>
+													<li>Experimented with different environments and reward functions to understand the effect of obstacle layout
+														design on successful path planning and learning speed.</li>
+													<li>Used ‘pygame’ library for creating the game environment.</li>
 												</ul>  
 											</p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
@@ -313,7 +318,7 @@
 													 - Computer Vision</h3>
 											</div>
 											<!--//row-->
-											<div class="resume-position-time">June - July 2020</div>
+											<div class="resume-position-time">June - Aug 2020</div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
@@ -322,13 +327,20 @@
 												In this project, we designed an algorithm for Multi-Object Tracking which has  -->
 											<p>
 												<ul>
-													<li>Designed an algorithm for Multi-Object Tracking which has been tested on 
-													the MOT Challenge benchmark and the KITTI dataset. The algorthim builds upon 
-													leading online tracking algorithms such as SORT, DeepSORT.</li>
-													<li>Explored CNN and colour histogram based feature descriptors for data associations.</li>
-													<li>Worked with algorithms such as Kalman Filters, Hungarian Association Method, 
-														Feature Extraction.</li>
+													<li>Designed an algorithm for online Multi-Object Tracking which has been tested on the MOT Challenge
+														benchmark and the KITTI dataset.</li>
+													<li>Conducted a literature survey and study of various online tracking algorithms including SORT and DeepSORT.</li>
+													<li>Explored CNN and color histogram-based feature descriptors for data associations.</li>
+													<li>Worked with algorithms such as Kalman Filters, Hungarian Association Method, Linear Assignment, Feature
+														Extraction and Track Management.</li>
+													<li>Implemented using Python, NumPy and OpenCV.</li>
 												</ul>
+											</p>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+												Acheivements:
+											</h4>
+											<p>Achieved 77Hz real-time online tracking on the MOT16 benchmark with comparable accuracy (MOTA)
+												performance to DeepSORT, illustrating improved computational efficiency. 
 											</p>
 											<!-- <h4 class="resume-timeline-item-desc-heading font-weight-bold">
 												Technical Topics:</h4>
@@ -369,20 +381,22 @@
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Dynamic Hand 
-													Gesture Control - Computer Vision</h3>
+												<h3 class="resume-position-title font-weight-bold mb-1">Mini-Projects on Deep Learning & Computer Vision</h3>
 											</div>
 											<!--//row-->
-											<div class="resume-position-time">July 2020</div>
+											<div class="resume-position-time">May 2020 - July 2020</div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
 											<p>
 												<ul>
-													<li>Implemented a Hand Gesture recognition system and 
-												its application for Power Point Presentations.</li>
-													<li>Used Google's mediapipe hand-tracking model for hand detection 
-												followed by classical techniques for gesture recognition.</li>
+													<li>Trained a Face Recognition model implementing the Siamese Network to learn the use of triplet
+														loss/contrastive loss for One-Shot Learning.</li>
+													<li>Created a hand-gesture recognition tool for interactive gesture control using Google’s mediapipe for handdetection
+														and classical techniques for tracking with OpenCV.</li>
+													<li>Object detection using YOLO for object detection and classification on COCO dataset.</li>
+													<li>Object detection and blurring using Haar Cascades for privacy protection using OpenCV.</li>
+													<li>Object tracking using Lucas-Kanade Sparse Optical Flow.</li>
 												</ul>
 											</p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
@@ -423,11 +437,15 @@
 										<div class="resume-timeline-item-desc">
 											<p>
 												<ul>
-													<li>Created a working simulation in Gazebo using ROS & TurtleBot which demonstrates autonomous navigation of a 
-														vehicle on an obstacle path.</li> 
-													<li>The bot used Sensor Fusion data, such as 3D depth data 
-														from RGB-D sensors, IMU data and GPS data for the simulation.</li>
-													<li>The design implemented methods such as SLAM, GMapping and Extended Kalman Filters.</li>
+													<li>The University Rover Challenge (URC) by the Mars Society has an autonomous driving task that requires the
+														rover to autonomously navigate from the given GPS coordinates of the start and end point.</li> 
+													<li>We created a working simulation which demonstrates autonomous navigation of a vehicle on a path with
+														obstacles.</li>
+													<li>Used the ROS framework and Python along with Gazebo for the simulation environment.</li>
+													<li>Used Sensor Fusion of multi modal sensor data, such as 3D depth data from RGB-D sensors, IMU data and GPS
+														data for the simulation.</li>
+													<li>Used algorithms like GMapping for SLAM and Extended Kalman Filters (EKF) and AMCL for localization.</li>
+													<li>Path planning was implemented using move_base package.</li>
 												</ul>
 											</p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">
